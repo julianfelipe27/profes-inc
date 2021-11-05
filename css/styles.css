@@ -1,0 +1,26 @@
+body{
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    padding:20px;
+}
+
+header h1{
+    width: 100%;
+    text-align: center;
+}
+
+main{
+    width: 100%;
+}
+
+main .addButton{
+    position: fixed;
+    right:1%;
+    bottom:1%;
+}
