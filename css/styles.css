@@ -1,26 +1,204 @@
-body{
+body {
     min-height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    background: linear-gradient(180deg, #1877F2 0%, #FFFFFF 87.5%, #FFFFFF 99.99%);
 }
 
-header{
+header {
     width: 100%;
     display: flex;
-    padding:20px;
+    flex-direction: column;
+    padding: 20px;
 }
 
-header h1{
-    width: 100%;
+header h1 {
+    width: auto;
+    margin-left:20px;
     text-align: center;
 }
 
-main{
+header hr {
     width: 100%;
 }
 
-main .addButton{
+main {
+    width: auto;
+}
+
+main .addButton {
     position: fixed;
-    right:1%;
-    bottom:1%;
+    right: 1%;
+    bottom: 1%;
+    z-index:999;
+}
+
+main p {
+    width: auto;
+    text-align: justify;
+    font-size: 20px;
+    margin: 20px;
+}
+
+main .cardsContainer {
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main .cardContainer {
+    display: flex;
+    flex-direction: column;
+    border: 15px solid #8A8C90;
+    border-radius: 10px;
+    min-height: 800px;
+    background: #F0F2F5;
+    width: 420px;
+    margin: 15px 0px;
+    align-items: center;
+}
+
+main .cardContainer .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320.54px;
+    height: 117.54px;
+    background: #1877F2;
+    border-radius: 15px;
+    margin: 60px 0px;
+}
+
+main .cardContainer .title span {
+    position: absolute;
+    margin-top: 60px;
+    font-size: 16px;
+    padding: 8px;
+}
+
+main .cardContainer .title h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-right: 5px;
+}
+
+main .cardContainer .card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    height: 300px;
+    margin: 20px 0px;
+    background: #C4C4C4;
+    justify-content: space-between;
+}
+
+main .cardContainer .card .title-card {
+    font-size: 36px;
+    text-align: center;
+}
+
+main .cardContainer .card .body-card {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+main .cardContainer .card .action-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .cardContainer .card .action-card button {
+    width: 178.06px;
+    height: 47.34px;
+    color: white;
+    background: #1877F2;
+    border: none;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+main .cardContainer .card .action-card button.disabled{
+    background-color:lightgray;
+}
+main .cardContainer .card .action-card .addParticipation:hover {
+    background-color: #3681e4;
+}
+
+main .cardContainer .card .action-card .removeParticipation {
+    background: #e51c23;
+}
+
+main .cardContainer .card .action-card .addParticipation {
+    background-image: url('../img/boton-agregar.png');
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: center;
+    background-size: 40px;
+}
+
+.modalAddStudent {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.modalAddStudent form {
+    width: 640px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.modalAddStudent form .addParticipation{
+    width: 170px;
+    height: 47px;
+    padding-right:40px;
+    color: white;
+    background: #1877F2;
+    border: none;
+    margin: 20px auto;
+    border-radius: 30px;
+    background-image: url("../img/send.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x:90%;
+    background-size: 35px;
+}
+
+.modalAddStudent form .addParticipation:hover{
+    background-color: #3681e4;
+}
+
+.modalAddStudent .form-body{
+    width:100%;
+}
+.modalAddStudent .closeIconContainer{
+    width:100%;
+    display: flex;
+    justify-content:flex-end;
+    margin-bottom: 10px;
+}
+
+.modalAddStudent .closeIconContainer img{
+    background: #e51c23;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#loadingMessageDiv{
+    margin-top :30px;
+    display: none;
+    justify-content: center;
 }
