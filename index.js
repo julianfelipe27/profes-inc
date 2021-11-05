@@ -97,7 +97,7 @@ const renderStudentsInCards = () => {
         if (participations > 10) {
             thirdCardsContainer.innerHTML += `<div class="card">
             <div class="title-card">
-                <b>${course}</b>
+                <p><strong>${course}</strong></p>
             </div>
             <div class="body-card">
                 <span><b>Estudiante:</b> ${name}</span>
@@ -114,7 +114,7 @@ const renderStudentsInCards = () => {
         else if (participations > 5) {
             secondCardsContainer.innerHTML += `<div class="card">
             <div class="title-card">
-                <b>${course}</b>
+            <p><strong>${course}</strong></p>
             </div>
             <div class="body-card">
                 <span><b>Estudiante:</b> ${name}</span>
@@ -131,7 +131,7 @@ const renderStudentsInCards = () => {
         else if (participations >= 0) {
             firstCardsContainer.innerHTML += `<div class="card">
             <div class="title-card">
-                <b>${course}</b>
+            <p><strong>${course}</strong></p>
             </div>
             <div class="body-card">
                 <span><b>Estudiante:</b> ${name}</span>

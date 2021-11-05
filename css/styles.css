@@ -90,14 +90,19 @@ main .cardContainer .card {
     flex-direction: column;
     width: 300px;
     padding: 20px;
-    height: 300px;
+    min-height: 300px;
     margin: 20px 0px;
     background: #C4C4C4;
     justify-content: space-between;
 }
 
 main .cardContainer .card .title-card {
-    font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+main .cardContainer .card .title-card p{
+    font-size: 24px;
     text-align: center;
 }
 
